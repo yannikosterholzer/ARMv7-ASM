@@ -39,6 +39,7 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
 <sub>**MIT License:**</sub>
 
 <sub>Copyright (c) 2023 Yannik Osterholzer</sub>
+
 <sub>Permission is hereby granted, free of charge, to any person obtaining a copy</sub>
 <sub>of this software and associated documentation files (the "Software"), to deal</sub>
 <sub>in the Software without restriction, including without limitation the rights</sub>
