@@ -27,7 +27,7 @@ _end:
 	
 //************************************* E O F ******************************************/
 
-// -----------------------------------------------------------------------------------------------	
+// ------------------------------SELFIE-IN-8086-----------------------------	
 	
 // Zum Vergleich habe ich in 8086 Assembler einen Code mit gleicher Funktionalität programmiert
 // Achtung: Dieser Code funktioniert nur als .com File wie erwartet, 
