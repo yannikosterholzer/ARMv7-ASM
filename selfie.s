@@ -1,5 +1,5 @@
 // Selfie
-// Selbst replizierender Code
+// Selbstreplizierender Code
 // Um diesen Code im CPUlator zu testen, sollte man die Debugging Checks in den Settings deaktivieren
 
 //---------------------------------------------------------------
