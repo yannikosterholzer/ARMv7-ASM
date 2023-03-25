@@ -2,7 +2,7 @@
 // (3x3) Matrix A * (3x3) Matrix B = Matrix C)
 
 // Kurzbeschreibung:
-// Das ARMv7-Assembly-Programm implementiert eine Matrixmultiplikation von zwei 3x3-Matrizen. 
+// Dieser ARMv7-Assembly-Code implementiert eine Matrixmultiplikation von zwei 3x3-Matrizen. 
 // Die Matrizen sind als Arrays definiert und die Ergebnismatrix wird ebenfalls als Array im Speicher abgelegt.
 
 // Die Funktion c_rm füllt die Ergebnismatrix durch die Multiplikation von Matrizen in Row-Major-Order. 
