@@ -31,7 +31,7 @@ _end:
 	
 // Zum Vergleich habe ich in 8086 Assembler einen Code mit gleicher Funktionalität programmiert
 // Achtung: Dieser Code funktioniert nur als .com File wie erwartet, 
-//          Anderenfalls (z.b in einer .exe) zeigen die Segmentregister auf unterschiedliche Adressen
+//          Anderenfalls (in einer .exe) zeigen die Segmentregister auf unterschiedliche Adressen
 //          Wodurch der Code nicht mehr wie gewünscht funktioniert
 // org 100h
 //    mov ax, [main-16]
