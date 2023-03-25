@@ -1,5 +1,5 @@
 # ARMv7-ASM
-Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die testweise für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden. 
+Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die testweise für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden. Wenn von Benutzereingabe die Rede ist, dann bezieht sich das dementsprechend auf die JTAG-UART Schnittstelle beim CPUlator.
 
 # Installation
 Dieses Repository enthält keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
@@ -19,6 +19,6 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   
   -**tolower**: Wandelt bei von Benutzer eingegebenen String Groß- in Kleinbuchstaben um & gibt den String wieder aus
   
-  -**atoi**: Wandle vom Benutzer über JTAG-UART eingegebene Ziffern in einen numerischen Dezimal-Wert um
+  -**atoi**: Wandle vom Benutzer eingegebene Ziffern in einen numerischen Dezimal-Wert um
   
   -**selfie**: Selbstreplizierender Code
