@@ -17,6 +17,6 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   
   -**matmul**: Multipliziert zwei 3x3 Matrizen mit konstanten Werten miteinander
   
-  -**tolower**: Wandelt bei - von Benutzer eingegebenen String Groß- in Kleinbuchstaben um und gibt den String wieder aus
+  -**tolower**: Wandelt bei von Benutzer eingegebenen String Groß- in Kleinbuchstaben um & gibt den String wieder aus
   
   -**atoi**: Wandle vom Benutzer über JTAG-UART in CPUlator eingegebene Ziffern in num. Wert um
