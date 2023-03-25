@@ -182,44 +182,44 @@ quit_req:                          // returnwert in r0
 //-------------------------------------	
 //----------------------> Bekommt in R0 Ptr x auf einen Speicherblock übergeben
 free_mem:
-    push {r4-r12, lr}
+	push {r4-r12, lr}
 //------------------------------------ Initialisiere Register
-    mov r1, r0                      // R1 = ptr x auf freizugebenden Speicherbereich
-    ldr r2, =tabelle	  
-    add r1, r1, #40		    // R1 = ptr x + 40 -> zeigt auf Ende einer "Struct" 
+        mov r1, r0                  // R1 = ptr x auf freizugebenden Speicherbereich
+        ldr r2, =tabelle	  
+        add r1, r1, #40		    // R1 = ptr x + 40 -> zeigt auf Ende einer "Struct" 
 	                            // 10 * 4 Bytes sollen überschrieben werden
-    ldr r3, =0xaaaaaaaa             // Wert mit denen der Bereich in Mem überschrieben wird
+        ldr r3, =0xaaaaaaaa         // Wert mit denen der Bereich in Mem überschrieben wird
 
-    push {r0}			     
+        push {r0}			     
 fm_overwrite:
-    cmp r0, r1			    // Kompletter Bereich überschrieben?
-    bhs sp_over_end		    // wenn ja -> sp_over_end	 
-    str r3, [r0]		    // *ptr = 0xaaaaaaaa
-    add r0, r0, #4		    //
-    b fm_overwrite		    //
+        cmp r0, r1	            // Kompletter Bereich überschrieben?
+        bhs sp_over_end		    // wenn ja -> sp_over_end	 
+        str r3, [r0]		    // *ptr = 0xaaaaaaaa
+        add r0, r0, #4		    //
+        b fm_overwrite		    //
 //-----------------------  Initialsiere Search_ptr
 				    // Suche Ptr auf freizugebenden Speicherbereich 
 				    // in der Speicherverwaltungstabelle "Tabelle"
 sp_over_end:			
 	ldr r3, =800                //-------> Tabellengröße
-    add r3, r2, r3		    // R3 = R2 (=tabelle) + 800 -> Ptr auf (Tabellen-Ende + 4 Bytes)
+        add r3, r2, r3		    // R3 = R2 (=tabelle) + 800 -> Ptr auf (Tabellen-Ende + 4 Bytes)
 	pop {r0}			
 search_ptr:
 	cmp r2, r3		    // Ist Tabellen-Ende erreicht?
-    bhs quit_free		    // Wenn ja -> Abbruch
-    ldr r1, [r2, #4]	            // Lade Ptr y aus Tabelle
-    cmp r1, r0			    // Ist ptr x == ptr y ???
-    beq change_fm	     	    // Wenn ja -> change_fm: Ändere den Belegungs-Eintrag
-    add r2, r2, #8		    // Wenn nein -> gehe die Tabelle weiter durch
-    b search_ptr		    //              bis Abbruchbedingung erreicht
+        bhs quit_free		    // Wenn ja -> Abbruch
+        ldr r1, [r2, #4]	    // Lade Ptr y aus Tabelle
+        cmp r1, r0		    // Ist ptr x == ptr y ???
+        beq change_fm	     	    // Wenn ja -> change_fm: Ändere den Belegungs-Eintrag
+        add r2, r2, #8		    // Wenn nein -> gehe die Tabelle weiter durch
+        b search_ptr		    //              bis Abbruchbedingung erreicht
 
 //-----------------------  Ändere Belgungs-Status in der Tabelle
 change_fm:
-    mov r1, #0			    // Belegungsstatus = 0 bedeutet: nicht reserviert	
-    str r1, [r2]		
+        mov r1, #0	            // Belegungsstatus = 0 bedeutet: nicht reserviert	
+        str r1, [r2]		
 quit_free:    
-    pop {r4-r12, lr}
-    bx lr
+        pop {r4-r12, lr}
+        bx lr
     
     
     
@@ -268,16 +268,15 @@ end_test1:
 
 //-------------------- **TEST 2** : Prüfe ob free(ptr) funktioniert
 //                             und Tabelleneintrag geändert wurde
-test2:			             // r1 muss als Offset übergeben werden 
-    push {r4-r12,lr}
-    ldr r0, =buffer
-    //mov r1, #20 // 6.er Eintrag
-    ldr r0, [r0,r1]
-    push {r2-r3}
-    bl free_mem
-    pop {r2-r3}
-    pop {r4-r12,lr}
-    bx lr
+test2:			             // r1 muss als Offset in den Bufferan Test 2 übergeben werden 
+	push {r4-r12,lr}
+        ldr r0, =buffer
+    	ldr r0, [r0,r1]
+    	push {r2-r3}
+    	bl free_mem
+   	pop {r2-r3}
+    	pop {r4-r12,lr}
+    	bx lr
     
     
 //* ************************************ E O F ***************************************** */
