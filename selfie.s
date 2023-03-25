@@ -13,7 +13,7 @@ _start:
 // -------------------------------------
 
 selfrepl:
-	mov r3, #10 		// Counter initialisieren
+	mov r3, #7 		// Counter initialisieren
 	sub r0, pc, #12 	// Pointer x auf Programmanfang setzen
 loop:
 	ldr r1, [r0]    	// Lade Befehl bei x -> y
