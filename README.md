@@ -19,4 +19,6 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   
   -**tolower**: Wandelt bei von Benutzer eingegebenen String Groß- in Kleinbuchstaben um & gibt den String wieder aus
   
-  -**atoi**: Wandle vom Benutzer über JTAG-UART in CPUlator eingegebene Ziffern in num. Wert um
+  -**atoi**: Wandle vom Benutzer über JTAG-UART in CPUlator eingegebene Ziffern in einen numerischen Dezimal-Wert um
+  
+  -**selfie**: Selbstreplizierender Code
