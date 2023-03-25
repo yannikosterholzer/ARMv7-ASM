@@ -2,10 +2,10 @@
 // Chunk basierte dynamische Speicherverwaltung
 //
 // Beschreibung:
-// Dieser Code implementiert eine dynamische Speicherverwaltung namens "F-ALLOC" mit Hilfe von zwei Arrays: "tabelle" und "mem". 
-// Die "tabelle" dient dazu, den Belegungsstatus des verfügbaren Speicherplatzes zu verfolgen, während "mem" den verfügbaren Speicherplatz enthält. 
+// Dieser Code implementiert eine dynamische Speicherverwaltung namens "F-ALLOC" mit Hilfe von "tabelle" und "mem". 
+// Die "tabelle" dient dazu, den Belegungsstatus des verfügbaren Speicherplatzes zu verfolgen, während "mem" den verfügbaren Speicherplatz darstellt. 
 // "tab_init" initialisiert die Tabelle für "F-ALLOC".
-// Der Code enthält auch zwei Funktionen: "req_mem" für das Anfordern von Speicherplatz und "free_mem" für das Freigeben von Speicherplatz. 
+// Der Code enthält desweiteren zwei Funktionen: "req_mem" für das Anfordern von Speicherplatz und "free_mem" für das Freigeben von Speicherplatz. 
 //
 
 
