@@ -8,7 +8,7 @@ Dieses Repository enthält keine ausführbare Software, daher sind keine besonde
 Die Codes in diesem Repository können im Kontext des CPulator ausgeführt werden, um ihre Funktionalität zu demonstrieren. Jede Datei enthält eine kurze Erklärung der Funktionalität und der entsprechenden Anweisungen zur Ausführung.
 
 # Beitragende
-Dieses Repository wurde von mir erstellt und wird von mir gepflegt. Verbesserungsvorschläge gerne als Nachricht an mich.
+Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschläge gerne als Nachricht an mich.
 
 # Codes
 Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
