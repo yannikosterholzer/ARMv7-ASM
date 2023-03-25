@@ -1,5 +1,5 @@
 # ARMv7-ASM
-Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-Prozessoren, die für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden. 
+Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden. 
 
 # Installation
 Dieses Repository enthält keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
