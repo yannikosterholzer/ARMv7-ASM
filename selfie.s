@@ -14,9 +14,9 @@ _start:
 
 	selfrepl:	
 	mov r3, #0	     // counter initialisieren							
-	sub r0, pc, #12	     // Pointer x auf Programmanfang setzen																	
+	sub r0, pc, #12	     // Pointer x auf Programmanfang 																	
 	ldr r1, [r0]	     // Lade Befehl bei x -> y						
-	str r1, [r0, #32]    // Pointer x auf Programmende setzen					    
+	str r1, [r0, #32]    // Pointer x + 32 auf Programmende					    
 	add r3, r3, #1	     // counter++							
 	add r0, r0, #4	     // x++							
 	cmp r3, #9	     // if(counter != 9)						    
