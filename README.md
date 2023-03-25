@@ -23,7 +23,7 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   
   -**selfie**: Selbstreplizierender Code
   
-  - ...
+   ...
   
   
   
