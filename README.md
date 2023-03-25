@@ -5,7 +5,7 @@ Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-Prozesso
 Dieses Repository enthält keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
 
 # Verwendung
-Die Codes in diesem Repository können im Kontext des CPulator ausgeführt werden, um ihre Funktionalität zu demonstrieren. Jede Datei enthält eine kurze Erklärung der Funktionalität und der entsprechenden Anweisungen zur Ausführung.
+Die Codes in diesem Repository können im Kontext des CPulator ausgeführt werden, um ihre Funktionalität zu demonstrieren. Jede Datei enthält eine kurze Erklärung der Funktionalität.
 
 # Beitragende
 Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschläge gerne als Nachricht an mich.
