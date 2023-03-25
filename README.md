@@ -1,5 +1,5 @@
 # ARMv7-ASM
-Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die testweise für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden. Wenn von Benutzereingabe die Rede ist, dann bezieht sich das dementsprechend auf die JTAG-UART Schnittstelle beim CPUlator.
+Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die testweise für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden. Wenn etwa von Benutzereingabe oder Ausgabe die Rede ist, dann bezieht sich das demnach auf die JTAG-UART Schnittstelle beim CPUlator.
 
 # Installation
 Dieses Repository enthält keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
