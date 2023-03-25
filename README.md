@@ -2,7 +2,7 @@
 Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die testweise für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden.
 
 # Installation
-Dieses Repository enthält keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
+Dieses Repository enthält lediglich Assembler-Source Code und keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
 
 # Verwendung
 Die Codes in diesem Repository können im Kontext des CPulator ausgeführt werden, um ihre Funktionalität zu demonstrieren. Jede Datei enthält eine kurze Erklärung der Funktionalität. CPUlator stellt einen Online-ARM-Assembler- und Simulator-Emulator bereit, der es Interessierten ermöglicht, ARM-Code zu schreiben, zu testen und zu debuggen, ohne dass eine spezielle Hardware oder Software erforderlich ist. Wenn in den Programmen dieses Repositories etwa von Benutzereingabe oder Ausgabe die Rede ist, dann bezieht sich das demnach auf die JTAG-UART Schnittstelle beim CPUlator.
@@ -22,3 +22,25 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   -**atoi**: Wandle vom Benutzer eingegebene Ziffern in einen numerischen Dezimal-Wert um
   
   -**selfie**: Selbstreplizierender Code
+  
+# MIT License
+
+Copyright (c) 2023 Yannik Osterholzer
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
