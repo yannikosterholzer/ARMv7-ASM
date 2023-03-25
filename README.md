@@ -13,6 +13,8 @@ Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschl�
 # Codes
 Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
 
-  -**F-alloc**: Implementiert eine Chunk-basierte dynamische Speicherverwaltung
+  -**falloc**: Implementiert eine Chunk-basierte dynamische Speicherverwaltung
   
   -**Matmul** : Multipliziert zwei 3x3 Matrizen mit konstanten Werten miteinander
+  
+  -**tolower**: Wandelt bei - von Benutzer eingegebenen String Groß- in Kleinbuchstaben um und gibt den String wieder aus
