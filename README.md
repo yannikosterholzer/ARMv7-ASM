@@ -23,6 +23,8 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   
   -**selfie**: Selbstreplizierender Code
   
+  -**orrs_c_flag**: Warum ORRS das Carry Flag setzen kann
+  
    ...
   
   
