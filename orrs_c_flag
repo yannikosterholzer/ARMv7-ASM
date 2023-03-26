@@ -4,7 +4,7 @@
 //    "Condition flags:
 //                      If S is specified, the ORR instruction:
 //                      - Updates the N and Z flags according to the result.
-//                      - Can update the *C flag* during the calculation of .Operand2
+//                      - Can update the C flag during the calculation of .Operand2
 //                      - Does not affect the V flag.
 //                       ..." 
 // 
