@@ -25,8 +25,10 @@ _start:
 	  ORRS r0, r1, r2, LSL #31
 end:	
 	  b end
-	 
-//    			 r1 : 0x00ffffffff
-//    r2 (nach lsl #31)->r2 : 0x0100000000
+
+
+//				 C| Registercontent
+//    			 r1 : 0x00 ffffffff
+//    r2 (nach lsl #31)->r2 : 0x01 00000000
 // Veorderung: _____________________________
-//    		C = 1    r0 : 0x00ffffffff	
+//    		         r0 : 0x01 ffffffff	
