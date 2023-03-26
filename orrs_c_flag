@@ -13,7 +13,7 @@
 // -> In ARMv7 ist es möglich, dass der zweite Operand kombiniert mit einer Shiftoperation berechnet wird.
 //    Das erklärt, wieso das Carry-Flag gesetzt werden kann
 
-// #Beispielcode:
+// Beispielcode:
 
 .global _start
 _start:
