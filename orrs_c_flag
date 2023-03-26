@@ -28,7 +28,7 @@ end:
 
 
 //				 C| Registercontent
-//    			 r1 : 0x00 ffffffff
+//    		  Operand 1 : 0x00 ffffffff	
 //    	          Operand 2 : 0x01 00000000
 // Veorderung: _____________________________
 //    		         r0 : 0x01 ffffffff	
