@@ -1,8 +1,8 @@
 // diy_strtok
 //
 // Kurzbeschreibung:
-// ersetzt in einem übergebenen String das folgende leerzeichen durch 0x00
-// und gibt einen PTR auf das folgende Zeichen zurück.
+// ersetzt in einem übergebenen String das erste leerzeichen durch 0x00
+// und gibt einen PTR auf das darauf folgende Zeichen zurück.
 // Ausnahme: nächstes Zeichen ist 0, dann gibt die Fkt einen NULLPTR zurück! 
 // ----------------------------------------------------- 
 
