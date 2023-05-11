@@ -25,6 +25,8 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   
   -**orrs_c_flag**: Erläutert, wie ORRS das Carry Flag setzen kann
   
+  -**strtok** DIY-Strtok
+  
    ...
   
   
