@@ -1,0 +1,49 @@
+// strcmp
+// vergleicht 2 strings
+// r0 = 0 -> strings sind ungleich
+// r0 = 1 -> strings sind gleich
+//-----------------------------------------------------------
+
+.data
+str1:
+	.asciz "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+str2: 
+	.asciz "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+.text
+.global _start
+_start:
+	push {r1-r3}
+	ldr r0, =str1
+	ldr r1, =str2
+	bl strcmp
+	pop {r1-r3}
+
+end:	
+	b end
+	
+	
+strcmp:
+	push {r4}
+	mov r4, #0
+strcmp_len:
+	ldrb r2, [r0, r4]
+	add r4, r4, #1
+	cmp r2, #0
+	bne strcmp_len
+	sub r4, r4, #1
+strcmp_loop:
+	ldrb r2, [r0, r4]
+	ldrb r3, [r1, r4]
+	subs r4, r4, #1
+	beq strcmp_true
+	cmp r2, r3
+	beq strcmp_loop
+	mov r0, #0
+	b strcmp_end
+strcmp_true:
+	mov r0, #1
+strcmp_end:
+	pop {r4}
+	bx lr
+	
+//************************************* E O F ******************************************/  
