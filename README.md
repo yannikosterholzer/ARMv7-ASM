@@ -24,6 +24,7 @@ Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
   -**selfie**: Selbstreplizierender Code
   
   -**orrs_c_flag**: Erläutert, wie ORRS das Carry Flag setzen kann
+   -**strcmp** vergleicht zwei Strings
   
   -**strtok** DIY-Strtok
   
