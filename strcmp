@@ -1,14 +1,15 @@
 // strcmp
 // vergleicht 2 strings
-// r0 = 0 -> strings sind ungleich
-// r0 = 1 -> strings sind gleich
+// r0 = 2 -> string1 erstes ungleiches zeichen größer als bei string 2
+// r0 = 1 -> string1 erstes ungleiches zeichen kleiner als bei string 2
+// r0 = 0 -> strings sind gleich
 //-----------------------------------------------------------
 
 .data
 str1:
-	.asciz "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	.asciz "test_a"
 str2: 
-	.asciz "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+	.asciz "test_b"
 .text
 .global _start
 _start:
@@ -16,34 +17,36 @@ _start:
 	ldr r0, =str1
 	ldr r1, =str2
 	bl strcmp
+	mov r10, r0
 	pop {r1-r3}
 
 end:	
 	b end
 	
-	
 strcmp:
 	push {r4}
 	mov r4, #0
-strcmp_len:
-	ldrb r2, [r0, r4]
-	add r4, r4, #1
-	cmp r2, #0
-	bne strcmp_len
-	sub r4, r4, #1
 strcmp_loop:
 	ldrb r2, [r0, r4]
 	ldrb r3, [r1, r4]
-	subs r4, r4, #1
-	beq strcmp_true
 	cmp r2, r3
-	beq strcmp_loop
-	mov r0, #0
+	bne str_noteq
+	cmp r2, #0
+	beq strcmp_true
+	add r4, r4, #1
+	b strcmp_loop
+	
+str_noteq:	
+	bcc strcmp_s1_kleiner
+	mov r0, #2
+	b strcmp_end
+strcmp_s1_kleiner:
+	mov r0, #1
 	b strcmp_end
 strcmp_true:
-	mov r0, #1
+	mov r0, #0
 strcmp_end:
 	pop {r4}
 	bx lr
 	
-//************************************* E O F ******************************************/  
+//************************************* E O F ******************************************/
