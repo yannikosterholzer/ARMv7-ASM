@@ -2,8 +2,9 @@
 //
 // Kurzbeschreibung:
 // ersetzt in einem übergebenen String das erste leerzeichen durch 0x00
-// und gibt einen PTR auf das darauf folgende Zeichen zurück.
+// und gibt einen PTR auf das darauf folgende Zeichen in r0 zurück.
 // Ausnahme: nächstes Zeichen ist 0, dann gibt die Fkt einen NULLPTR zurück! 
+// In r1 wird die übergebene Anfangsadresse zurückgegeben
 // ----------------------------------------------------- 
 
 
@@ -47,6 +48,7 @@ while:
 	add r1, r1, #4
 	push {r1-r3}
 	bl strtok
+	mov r10, r1
 	pop {r1-r3}
 	cmp r0, r2
 	bne while
@@ -58,6 +60,8 @@ end:
 // -------------------------------------
 
 strtok:
+	push {r0}
+strtok_loop:
 	ldrb r1, [r0]
 	ldr r3, =NULL
 	cmp r1, #0
@@ -65,7 +69,7 @@ strtok:
 	cmp r1, #0x20
 	beq strtok_xchange
 	add r0, r0, #1
-	b strtok
+	b strtok_loop
 strtok_null:
 	mov r0, r3
 	b end_strtok
@@ -74,6 +78,7 @@ strtok_xchange:
 	strb r1, [r0]
 	add r0, r0, #1
 end_strtok:
+	pop {r1}
 	bx lr
 
 
