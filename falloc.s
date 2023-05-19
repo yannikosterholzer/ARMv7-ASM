@@ -267,7 +267,7 @@ end_test1:
 
 //-------------------- **TEST 2** : Prüfe ob free(ptr) funktioniert
 //                             und Tabelleneintrag geändert wurde
-test2:			             // r1 muss als Offset in den Bufferan Test 2 übergeben werden 
+test2:			             // r1 muss als Offset in den Buffer an "Test 2" übergeben werden 
 	push {r4-r12,lr}
         ldr r0, =buffer
     	ldr r0, [r0,r1]
