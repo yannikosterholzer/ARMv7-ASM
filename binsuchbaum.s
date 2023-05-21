@@ -1,6 +1,10 @@
+//binsuchbaum
+//Kurzbeschreibung:
+// Der Zweck des Programms ist es, eine gegebene Zeichenkette in Teilstrings zu zerlegen, 
+// diese in alphabetischer Reihenfolge einem binären Suchbaum zu speichern und dann den Baum anschließend zu löschen
 
-    .data
 
+.data
 .align 4
 tabelle:
 
@@ -39,9 +43,12 @@ NULL:  // Definiere NULL
 	.word 0xffffffff
 	
 text:	// Textvorlage für Programm
-	.asciz "   c a b d d a " // 6a 4b 1c
+	.ascii "Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
+	.ascii "Sed consequat ipsum ipsum sed." 
+	.ascii "Ut aliquam ipsum dolor, sed consectetur consectetur elit." 
+	.ascii "Dolor sit amet, sed elit consectetur adipiscing." 
+	.asciz "Amet ipsum dolor, consectetur adipiscing elit."
 	.align 4
-
 
 
 
