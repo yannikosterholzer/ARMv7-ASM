@@ -409,6 +409,8 @@ strtok_xchange: //wenn mehrere Leerzeichen in Reihe
 	ldrb r1, [r0]
 	cmp r1, #0x20
 	beq strtok_xchange
+	cmp r1, #0
+	beq strtok_null
 end_strtok:
 
 		// r1 gibt anfangsadresse des übergebenen Strings zurück
