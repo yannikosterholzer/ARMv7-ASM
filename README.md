@@ -13,6 +13,8 @@ Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschl�
 # Codes
 Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
 
+  -**binsuchbaum**: Implementiert einen binären Suchbaum [mein bisher umfangreichstes Programm]
+
   -**falloc**: Implementiert eine Chunk-basierte dynamische Speicherverwaltung
   
   -**matmul**: Multipliziert zwei 3x3 Matrizen mit konstanten Werten miteinander
