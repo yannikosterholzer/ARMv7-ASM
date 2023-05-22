@@ -79,7 +79,7 @@ main:
 	ldr r0, =anker
 	ldr r1, =NULL
 	ldr r1, [r1]
-	str r1, [r0]
+	str r1, [r0] 	//anker = NULL
 
 	ldr r0, =text
 	bl prepstr //returnwert ist Anfangsadresse des Strings
