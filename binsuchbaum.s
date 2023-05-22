@@ -1,7 +1,14 @@
 //binsuchbaum
 //Kurzbeschreibung:
 // Der Zweck des Programms ist es, eine gegebene Zeichenkette in Teilstrings zu zerlegen, 
-// diese in alphabetischer Reihenfolge einem binären Suchbaum zu speichern und dann den Baum anschließend zu löschen
+// diese in alphabetischer Reihenfolge einem binären Suchbaum zu speichern, dabei auch die Häufigkeit der Wörter im Text auszuwerten
+// und dann den Baum anschließend zu löschen
+
+// Das Programm wurde auch für diverse fehlerhafte Textvorlagen getestet, darunter:
+//	- Strings die nur aus nicht-alphabetischen Zeichen bestehen
+//	- Strings die mit nicht-alphabetischen Zeichen beginnen
+//	- Strings, die sowohl aus nicht-alphabetischen Zeichen, als auch aus Buchstaben bestehen
+
 
 
 .data
