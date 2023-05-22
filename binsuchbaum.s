@@ -43,7 +43,7 @@ NULL:  // Definiere NULL
 	.word 0xffffffff
 	
 text:	// Textvorlage für Programm
-	.ascii "Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
+	.ascii "           Lorem ipsum dolor sit amet, consectetur adipiscing elit." 
 	.ascii "Sed consequat ipsum ipsum sed." 
 	.ascii "Ut aliquam ipsum dolor, sed consectetur consectetur elit." 
 	.ascii "Dolor sit amet, sed elit consectetur adipiscing." 
@@ -108,6 +108,10 @@ main_init:
 //-------------------------------------	
 selectwords:  //Wählt Wörter aus einem String aus und fügt sie in einen Baum ein.
 	push {lr}
+	ldrb r1, [r0]
+	cmp r1, #0
+	beq selwords_end
+	
 	// mit r0 adresse von string übergeben!
 selectwords_loop:
 	bl strtok
@@ -218,7 +222,7 @@ createroot_end:
 
 printroot: // Durchläuft den Baum rekursiv und gibt den reservierten Speicher wieder frei
 	push {lr}
-	bl printroot_check_anker
+	b printroot_check_anker
 	bl pr_links
 	// Hier könnte man eine Ausgabe implementieren
 	bl pr_rechts
@@ -237,9 +241,11 @@ printroot_check_anker:
 	ldr r3, =NULL
 	ldr r3, [r3]
 	cmp r1, r3
-	bne pr_links
+	beq pr_ankernull
+	bl pr_links
+pr_ankernull:
 	mov r0, #2
-	bx lr
+	b pr_end
 pr_links:
 	ldr r1, [r0, #104]
 	cmp r1, r3
