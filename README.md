@@ -13,7 +13,10 @@ Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschl�
 # Codes
 Hier finden Sie eine Übersicht der Codes und deren Kurzbeschreibung:
 
-  -**binsuchbaum**: Implementiert einen binären Suchbaum [mein bisher umfangreichstes Programm]
+  -**binsuchbaum**: Implementiert einen binären Suchbaum [mein bisher umfangreichstes Programm] 
+                    Das Programm sortiert die Wörter eines Textes in alphabetischer Reihenfolge und wertet ihre Häufigkeit aus.
+                    Es wurde getestet für Strings die rein aus leerzeichen, aus Zahlen und nicht alphabetischen Zeichen bestehen,
+                    sowie derartige Zeichen in Kombination mit Buchstaben, die es ja eigentlich verarbeiten soll
 
   -**falloc**: Implementiert eine Chunk-basierte dynamische Speicherverwaltung
   
