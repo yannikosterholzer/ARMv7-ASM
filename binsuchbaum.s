@@ -227,13 +227,24 @@ createroot_end:
 
 
 
+
 printroot: // Durchläuft den Baum rekursiv und gibt den reservierten Speicher wieder frei
 	push {lr}
-	bl printroot_check_anker
+printroot_check_anker:
+	ldr r1, =anker
+	ldr r1, [r1]
+	ldr r3, =NULL
+	ldr r3, [r3]
+	cmp r1, r3
+	beq pr_ankernull
+	b pr_deeper
+pr_ankernull:
+	mov r0, #2
+	b pr_end
+pr_deeper:
 	bl pr_links
 	// Hier könnte man eine Ausgabe implementieren
 	bl pr_rechts
-	
 	push {r0-r3}
     bl free_mem
    	pop {r0-r3}
@@ -242,18 +253,6 @@ pr_end:
 	pop {lr}
 	bx lr
 	
-printroot_check_anker:
-	ldr r1, =anker
-	ldr r1, [r1]
-	ldr r3, =NULL
-	ldr r3, [r3]
-	cmp r1, r3
-	beq pr_ankernull
-	bx lr
-pr_ankernull:
-	mov r0, #2
-	ldr r3, =pr_end
-	bx r3
 	
 pr_links:
 	ldr r1, [r0, #104]
