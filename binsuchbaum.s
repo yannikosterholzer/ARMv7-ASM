@@ -252,8 +252,8 @@ printroot_check_anker:
 	bx lr
 pr_ankernull:
 	mov r0, #2
-	ldr lr, =pr_end
-	bx lr
+	ldr r3, =pr_end
+	bx r3
 	
 pr_links:
 	ldr r1, [r0, #104]
