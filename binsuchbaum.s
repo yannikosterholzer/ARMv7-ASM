@@ -237,11 +237,11 @@ printroot_check_anker:
 	ldr r3, [r3]
 	cmp r1, r3
 	beq pr_ankernull
-	b deeper
+	b pr_deeper
 pr_ankernull:
 	mov r0, #2
 	b pr_end
-deeper:
+pr_deeper:
 	bl pr_links
 	// Hier könnte man eine Ausgabe implementieren
 	bl pr_rechts
