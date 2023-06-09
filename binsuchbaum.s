@@ -8,6 +8,7 @@
 //	- Strings die nur aus nicht-alphabetischen Zeichen bestehen
 //	- Strings die mit nicht-alphabetischen Zeichen beginnen
 //	- Strings, die sowohl aus nicht-alphabetischen Zeichen, als auch aus Buchstaben bestehen
+//      - "leerer String"
 
 
 
