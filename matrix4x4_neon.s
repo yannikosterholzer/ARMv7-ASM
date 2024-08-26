@@ -136,8 +136,8 @@ Matrix4x4_mul:       @ r0 = ptr auf Matrix_c, r1 = ptr auf Matrix_a, r2 = ptr au
 
 matr4_transp: @ Transponiere 4x4 Matrix r0 = Matrix_in r1 = Matrix_out
         push {lr}
-		push {r0}	
-		vld1.32 {q0}, [r0]!
+	push {r0}	
+	vld1.32 {q0}, [r0]!
         vld1.32 {q1}, [r0]!
         vld1.32 {q2}, [r0]!
         vld1.32 {q3}, [r0]!
