@@ -127,7 +127,7 @@ Matrix4x4_mul:       @ r0 = ptr auf Matrix_c, r1 = ptr auf Matrix_a, r2 = ptr au
         vst1.32 {q6}, [r3]
         vpop {d8-d15}    
         pop {r4-r6}    
-	pop	{pc}
+	pop {pc}
 
 matr4_transp: @ Transponiere 4x4 Matrix r0 = Matrix_in r1 = Matrix_out
         push {lr}
@@ -154,4 +154,4 @@ matr4_transp: @ Transponiere 4x4 Matrix r0 = Matrix_in r1 = Matrix_out
         vst1.32 {q1}, [r1]!
         vst1.32 {q2}, [r1]!
         vst1.32 {q3}, [r1]
-	pop	{pc}
+	pop {pc}
