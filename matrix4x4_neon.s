@@ -3,18 +3,13 @@
 
 .data
 matrix_b_tr: .word 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,	0x00, 0x00, 0x00, 0x00
-		/*
-            [c11, c12, c13, c14],
-            [c21, c22, c23, c24],
-            [c31, c32, c33, c34],
-            [c41, c42, c43, c44]
-        */
+
 .text        
 Matrix4x4_mul:       @ r0 = ptr auf Matrix_c, r1 = ptr auf Matrix_a, r2 = ptr auf matrix_B
         push {lr}
-		push {r4-r6}	
+	push {r4-r6}	
         vpush {d8-d15}   
-		vld1.32 {q8}, [r1]!
+	vld1.32 {q8}, [r1]!
         vld1.32 {q9}, [r1]!
         vld1.32 {q10}, [r1]!
         vld1.32 {q11}, [r1]!
@@ -132,7 +127,7 @@ Matrix4x4_mul:       @ r0 = ptr auf Matrix_c, r1 = ptr auf Matrix_a, r2 = ptr au
         vst1.32 {q6}, [r3]
         vpop {d8-d15}    
         pop {r4-r6}    
-		pop	{pc}
+	pop	{pc}
 
 matr4_transp: @ Transponiere 4x4 Matrix r0 = Matrix_in r1 = Matrix_out
         push {lr}
@@ -159,4 +154,4 @@ matr4_transp: @ Transponiere 4x4 Matrix r0 = Matrix_in r1 = Matrix_out
         vst1.32 {q1}, [r1]!
         vst1.32 {q2}, [r1]!
         vst1.32 {q3}, [r1]
-		pop	{pc}
+	pop	{pc}
