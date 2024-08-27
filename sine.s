@@ -23,7 +23,7 @@ sin(x) = x - (x^3)/(3!) + (x^5)/(5!)  - (x^7)/(7!)  + (x^9)/(9!) - (x^11)/(11!) 
 */
 
 .text
-sine:                           @ input wert in s0 (f32) ergebnis in s0 rad
+sine:                           @ input wert in s0 (f32) ergebnis in s0 [rad]
     vpush {d8-d15}      
     @ Input auf den Bereich [-π,π] mappen
     @ xmod = x - (int(x/2π) * 2π)
