@@ -64,7 +64,7 @@ lesserpi:
 
     @ Multiplikation mit den Koeffizienten
     vmul.f32 q1, q3, q6 
-    vmul.f32 q2, q4, q7 // new
+    vmul.f32 q2, q4, q7 
 
     @ Summierung der Terme
     vadd.f32 q3, q1, q2
