@@ -5,7 +5,6 @@ pi:     .float  3.1415927        @ π
 twopi:  .float  6.2831855        @ 2π
 
 @ Tabelle der Koeffizienten für die Taylor-Reihe von sin(x) um den Punkt 0
-@ Diese Koeffizienten entsprechen den Termen der Reihe
 taylorcoeff_table: 
 .float -1.6666666666666667e-01   // -x^3 / 3!
 .float  8.3333333333333333e-03   //  x^5 / 5!
