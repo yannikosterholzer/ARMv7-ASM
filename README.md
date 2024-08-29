@@ -1,11 +1,5 @@
 # ARMv7-ASM
-Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren, die testweise für den Einsatz im **CPulator** (https://cpulator.01xz.net/?sys=arm-de1soc) entwickelt wurden.
-
-# Installation
-Dieses Repository enthält lediglich Assembler-Source Code und keine ausführbare Software, daher sind keine besonderen Installationsanweisungen erforderlich.
-
-# Verwendung
-Die Codes in diesem Repository können im Kontext des CPulator ausgeführt werden, um ihre Funktionalität zu demonstrieren. Jede Datei enthält eine kurze Erklärung der Funktionalität. CPUlator stellt einen Online-ARM-Assembler- und Simulator-Emulator bereit, der es Interessierten ermöglicht, ARM-Code zu schreiben, zu testen und zu debuggen, ohne dass eine spezielle Hardware oder Software erforderlich ist. Wenn in den Programmen dieses Repositories etwa von Benutzereingabe oder Ausgabe die Rede ist, dann bezieht sich das demnach auf die JTAG-UART Schnittstelle beim CPUlator.
+Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren.
 
 # Beitragende
 Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschläge gerne als Nachricht an mich.
