@@ -1,5 +1,5 @@
 # ARMv7-ASM
-Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-(M)-Prozessoren.
+Dieses Repository enthält eine Sammlung von Assembler-Codes für ARMv7-Prozessoren.
 
 # Beitragende
 Alle Inhalte in diesem Repository wurden von mir erstellt. Verbesserungsvorschläge gerne als Nachricht an mich.
